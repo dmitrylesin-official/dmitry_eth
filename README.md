@@ -1,6 +1,8 @@
 # Dmitry Lesin Portfolio
 
-![Portfolio Screenshot](img/avatar.png)
+<p align="center">
+  <img src="img/avatar.png" alt="Portfolio Screenshot" width="200"/>
+</p>
 
 ---
 
