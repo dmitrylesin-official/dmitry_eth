@@ -48,6 +48,6 @@ My projects include building Telegram bots, data processing and machine learning
 - **Gmail:** dmitrylesin_official@gmail.com  
 - **Discord:** @dmitry.eth_official  
 - **Telegram:** [@dmitrylesin](https://t.me/dmitrylesin)  
-- **X (Twitter):** [@lesin_official](https://x.com/lesin_official)  
+- **X (Twitter):** [@lesin_official](https://x.com/dmitry_lesin)  
 - **GitHub:** [dmitrylesin](https://github.com/dmitrylesin-official)
 - Habr: [@dmitry_eth](https://habr.com/ru/users/dmitry_eth/)
