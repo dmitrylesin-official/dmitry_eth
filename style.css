@@ -1,4 +1,3 @@
-/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,388 +5,166 @@
 }
 
 body {
-  background: linear-gradient(135deg, #4B0082, #1c1c1c, #8B00FF);
-  color: #fff;
   font-family: 'Roboto', sans-serif;
+  background-color: #0e0e0e;
+  color: #f4f4f4;
   line-height: 1.6;
 }
 
-a {
-  color: #8B00FF;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-
-/* Container */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  padding: 40px 0;
+  padding: 2rem 0;
 }
 
-/* Header Section */
 header {
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
   text-align: center;
-  padding: 60px 0;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 3rem 0;
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
+  width: 120px;
   border-radius: 50%;
-  border: 4px solid #fff;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-family: 'Orbitron', sans-serif;
-  color: #fff;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #ddd;
-  font-weight: 300;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 0;
+  color: #0ff;
+  z-index: -1;
+  animation: glitch 1s infinite;
 }
 
-/* Unified Section Style */
-.section {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 60px 0;
-  border-radius: 8px;
-  text-align: center;
+@keyframes glitch {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
 }
 
-/* About Section */
-.about p {
-  max-width: 700px;
-  margin: auto;
+.subtitle {
   font-size: 1.1rem;
-  color: #eee;
+  color: #aaa;
 }
 
-/* Stack Section */
-.stack .tags {
+.section {
+  padding: 4rem 0;
+  background-color: #1a1a1a;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.languages .flags span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.flags img {
+  width: 24px;
+  margin-right: 6px;
+}
+
+.tags {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
 }
 
-.stack .tags span {
-  background: #fff;
-  color: #8B00FF;
-  border: 1px solid #8B00FF88;
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tags span {
+  background: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
-.stack .tags span:hover {
-  background: #8B00FF;
-  color: #fff;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Projects Section */
-.projects h2 {
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-/* --- Grid Layout for Project Cards --- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
 }
 
-/* --- Base Card Styles --- */
 .card {
-  width: 280px;
-  height: 400px;
   perspective: 1000px;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
 }
 
 .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-/* --- Front & Back of the Card --- */
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
-  height: 100%;
   backface-visibility: hidden;
-  border-radius: 16px;
-}
-
-/* --- Card Front Side --- */
-.card-front {
-  background: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  min-height: 280px;
 }
 
 .card-front img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.card-front h3 {
-  font-size: 1.5rem;
-  color: #8B00FF;
-  text-align: center;
-}
-
-/* --- Card Back Side --- */
 .card-back {
   transform: rotateY(180deg);
-  background: #222;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.card-back p {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-/* --- Static (Non-flipping) Card --- */
-.card.no-flip .card-inner {
-  transform: none;
-  transition: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.card.no-flip .card-back {
-  display: none;
-}
-
-/* --- Only Text Card (Centered) --- */
-.card-front.only-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1e1e2f;
-  color: #fff;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  height: 200px;
-  border-radius: 15px;
 }
 
-/* --- Center a Card in Grid --- */
-.centered-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* --- Size Adjustments for Grid Cards --- */
-.project-grid .card {
-  height: 400px;
-}
-
-.project-grid .card.no-flip {
-  height: 400px;
-}
-
-.project-grid .card-front.only-text {
-  height: 100%;
-}
-
-/* --- General styles for the card .soon --- */
 .card.soon {
-  background: #333;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  color: #fff;
-  position: relative;
-  transform: none !important;
-  transition: none !important;
-  pointer-events: none;
-  border-radius: 20px;
-  overflow: hidden;
+  opacity: 0.5;
 }
 
-/* Title */
-.card.soon h3 {
-  color: #8B00FF;
-}
-
-/* Front side */
-.card-front.soon {
-  background: #333;
+.contact .socials {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  color: #fff;
-  position: static;
-  backface-visibility: visible;
-  border-radius: 16px;
-}
-
-/* The back side is hidden */
-.card-back.soon {
-  display: none !important;
-}
-
-/* Contact Section */
-.contact {
-  padding: 60px 0;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 8px;
-  text-align: center;
-}
-
-.contact ul {
-  list-style: none;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.contact li {
-  margin: 15px 0;
-  font-size: 1.1rem;
+  gap: 20px;
+  font-size: 2rem;
 }
 
 .contact a {
-  color: #8B00FF;
-  text-decoration: none;
-  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s;
 }
 
 .contact a:hover {
-  text-decoration: underline;
-  color: #fff;
+  color: #00ffcc;
 }
 
-/* Footer */
 footer {
+  background: #0a0a0a;
   text-align: center;
-  padding: 30px 0;
-  font-size: 1rem;
-  background: rgba(0, 0, 0, 0.7);
-  color: #ddd;
-}
-
-/* Theme switch button */
-#theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #8B00FF;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 1000;
-  transition: background 0.3s;
-}
-
-/* Centering headings */
-h1, h2 {
-  text-align: center;
-}
-
-
-#theme-toggle:hover {
-  background: #6a00cc;
-}
-
-/* Dark theme */
-body.dark {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-body.dark header,
-body.dark section,
-body.dark footer {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-}
-body.dark .card {
-  background-color: #2c2c2c;
-  color: #fff;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-.fade-in.visible {
-  opacity: 1;
-}
-
-.languages {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.languages h3 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.languages p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.languages span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1em;
+  padding: 1rem 0;
+  color: #777;
+  font-size: 0.9rem;
 }
