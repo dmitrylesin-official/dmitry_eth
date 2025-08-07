@@ -1,78 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="img/ld.png" type="image/png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dmitry</title>
+  <title>Dmitry Lesin | Portfolio</title>
+  <link rel="icon" href="img/ld.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Orbitron:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script defer src="script.js"></script>
 
-   ym(101746473, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/101746473" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header Section -->
+
+  <!-- Header -->
   <header>
     <div class="container">
-      <img src="img/avatar.png" alt="Dmitry Lesin" class="avatar" />
-      <h1>dmitry.eth</h1>
-      <p>Python Developer | Data Scientist | Machine Learning Enthusiast | Telegram Bot Developer | Crypto Enthusiast</p>
+      <img src="img/avatar.png" alt="Dmitry Lesin" class="avatar">
+      <h1 class="glitch" data-text="dmitry.eth">dmitry.eth</h1>
+      <p class="subtitle">Python Developer | Data Scientist | ML Engineer | Telegram Bot Dev | Crypto Enthusiast</p>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
+  <!-- About -->
+  <section class="about section">
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a Python developer passionate about Data Science and Machine Learning. My goal is to create projects that make life easier and help people. I develop solutions using modern technologies to improve processes and make them more efficient. My projects include building Telegram bots, data processing and machine learning systems, as well as implementing encryption for enhanced security.
+        I am a Python developer passionate about Data Science and Machine Learning...
+        <br><br>
+        I build Telegram bots, secure encryption tools, ML-powered applications and more.
       </p>
-      <div class="languages" style="margin-top: 20px;">
-  <h3 style="margin-bottom: 10px;">Languages</h3>
-  <p style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-    <span title="Russian">
-      <img src="https://flagcdn.com/w40/ru.png" alt="Russian" style="width: 24px; vertical-align: middle;" />
-      Russian
-    </span>
-    <span title="English">
-      <img src="https://flagcdn.com/w40/us.png" alt="English" style="width: 24px; vertical-align: middle;" />
-      English
-    </span>
-    <span title="Ukrainian">
-      <img src="https://flagcdn.com/w40/ua.png" alt="Ukrainian" style="width: 24px; vertical-align: middle;" />
-      Ukrainian
-    </span>
-    <span title="Learning German">
-      <img src="https://flagcdn.com/w40/de.png" alt="German" style="width: 24px; vertical-align: middle; opacity: 0.6;" />
-      <em>Learning German</em>
-    </span>
-  </p>
-</div>
+
+      <div class="languages">
+        <h3>Languages</h3>
+        <div class="flags">
+          <span><img src="https://flagcdn.com/w40/ru.png" alt="Russian"> Russian</span>
+          <span><img src="https://flagcdn.com/w40/us.png" alt="English"> English</span>
+          <span><img src="https://flagcdn.com/w40/ua.png" alt="Ukrainian"> Ukrainian</span>
+          <span><img src="https://flagcdn.com/w40/de.png" alt="German" style="opacity: 0.6;"><em> Learning German</em></span>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-  <!-- Tech Stack Section -->
-  <section class="stack">
+  <!-- Tech Stack -->
+  <section class="stack section">
     <div class="container">
-      <h2>My Tech Stack</h2>
+      <h2>Tech Stack</h2>
       <div class="tags">
         <span>Python</span>
-        <span>Data Science</span>
         <span>Machine Learning</span>
+        <span>Data Science</span>
         <span>Telegram Bots</span>
         <span>HTML</span>
         <span>CSS</span>
@@ -81,11 +61,13 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects">
+  <!-- Projects -->
+  <section class="projects section">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
+
+        <!-- Example Project Card -->
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
@@ -93,10 +75,13 @@
               <h3>SmartPC</h3>
             </div>
             <div class="card-back">
-              <p>SmartPC is a desktop application designed for seamless PC management with voice input functionality.</p>
+              <p>Desktop app for PC control using voice commands.</p>
             </div>
           </div>
         </div>
+
+        <!-- Repeat Cards -->
+        <!-- EncryptorX, JCAT, FreeBooks, Tessaract, Coming Soon -->
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
@@ -104,10 +89,11 @@
               <h3>EncryptorX</h3>
             </div>
             <div class="card-back">
-              <p>EncryptorX is a data encryption project that implements various encryption methods to ensure the highest level of security.</p>
+              <p>Top-tier encryption system with multiple ciphers.</p>
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
@@ -115,7 +101,7 @@
               <h3>JCAT</h3>
             </div>
             <div class="card-back">
-              <p>A token built on Monad blockchain.</p>
+              <p>Monad-based token project.</p>
             </div>
           </div>
         </div>
@@ -123,14 +109,15 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img src="img/freebooks.png" alt="Freebooks">
+              <img src="img/freebooks.png" alt="FreeBooks">
               <h3>FreeBooks</h3>
             </div>
             <div class="card-back">
-              <p>FreeBooks is a Telegram bot that gives you access to a wide range of free books.</p>
+              <p>Telegram bot giving access to free books.</p>
             </div>
           </div>
         </div>
+
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
@@ -138,71 +125,42 @@
               <h3>Tessaract</h3>
             </div>
             <div class="card-back">
-              <p>Tessaract is your personal cosmic hub for managing thoughts, goals, and dreams.</p>
+              <p>Cosmic planner for your goals and ideas.</p>
             </div>
           </div>
         </div>
 
-        <!-- Soon Card -->
         <div class="card soon">
           <div class="card-inner">
             <div class="card-front soon">
               <h3>Soon...</h3>
             </div>
             <div class="card-back soon">
-              <p>This project is coming soon!</p>
+              <p>New projects coming soon!</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <!-- Font Awesome CDN для иконок -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<section class="contact">
-  <div class="container" style="text-align: center;">
-    <h2 style="font-size: 2em; margin-bottom: 30px;">Connect with me</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
-
-      <a href="mailto:dmitrylesin_official@gmail.com" target="_blank" style="text-decoration: none;">
-        <i class="fas fa-envelope fa-2x" style="color: #D44638;"></i>
-      </a>
-
-      <a href="https://discord.com" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-discord fa-2x" style="color: #5865F2;"></i>
-      </a>
-
-      <a href="https://t.me/lesin_official" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-telegram fa-2x" style="color: #0088cc;"></i>
-      </a>
-
-      <a href="https://www.kaggle.com/dmitrylesin" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-kaggle fa-2x" style="color: #20BEFF;"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/dmitrylesin" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-linkedin fa-2x" style="color: #0A66C2;"></i>
-      </a>
-
-      <a href="https://github.com/dmitrylesin" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-github fa-2x" style="color: #333;"></i>
-      </a>
-
-      <a href="https://x.com/lesin_official" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-x-twitter fa-2x" style="color: #000000;"></i>
-      </a>
-
-      <a href="https://habr.com/ru/users/dmitrylesin/" target="_blank" style="text-decoration: none;">
-        <i class="fab fa-hackerrank fa-2x" style="color: #65A3BE;"></i>
-      </a>
-
+  <!-- Contact -->
+  <section class="contact section">
+    <div class="container">
+      <h2>Connect with Me</h2>
+      <div class="socials">
+        <a href="mailto:dmitrylesin_official@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://discord.com"><i class="fab fa-discord"></i></a>
+        <a href="https://t.me/lesin_official"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.kaggle.com/dmitrylesin"><i class="fab fa-kaggle"></i></a>
+        <a href="https://www.linkedin.com/in/dmitrylesin"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/dmitrylesin"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/lesin_official"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://habr.com/ru/users/dmitrylesin/"><i class="fab fa-hackerrank"></i></a>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -211,4 +169,3 @@
 
 </body>
 </html>
-
